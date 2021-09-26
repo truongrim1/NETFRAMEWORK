@@ -48,6 +48,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\History.cs" />
+    <Compile Include="Entities\Person.cs" />
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,6 +79,7 @@
     <EmbeddedResource Include="User.resx">
       <DependentUpon>User.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Properties\DataSources\BasicWinform.Entities.History.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
