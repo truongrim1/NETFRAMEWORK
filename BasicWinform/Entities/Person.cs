@@ -31,7 +31,7 @@ namespace BasicWinform.Entities
                 Id = "1",
                 FirstName = "Trương Công",
                 LastName = "Vĩ",
-                DOB = new DateTime(2000, 11, 11),
+                DOB = new DateTime(2000, 12, 22),
                 HomeTown = "Thừa Thiên Huế",
                 Sex = EGioiTinh.Nam
             });
@@ -39,7 +39,7 @@ namespace BasicWinform.Entities
             {
                 Id = "2",
                 FirstName = "Nguyễn",
-                LastName = "Thị Thảo",
+                LastName = "Thị Thu",
                 DOB = new DateTime(2000, 5, 6),
                 HomeTown = "Đà Nẵng",
                 Sex = EGioiTinh.Nu

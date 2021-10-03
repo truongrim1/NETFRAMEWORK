@@ -31,3 +31,4 @@ C:\Users\vta\source\repos\BasicWinform\obj\Debug\BasicWinform.csproj.GenerateRes
 C:\Users\vta\source\repos\BasicWinform\obj\Debug\BasicWinform.csproj.CoreCompileInputs.cache
 C:\Users\vta\source\repos\BasicWinform\obj\Debug\BasicWinform.exe
 C:\Users\vta\source\repos\BasicWinform\obj\Debug\BasicWinform.pdb
+C:\Users\vta\source\repos\BasicWinform\obj\Debug\BasicWinform.frmmanagerUser.resources

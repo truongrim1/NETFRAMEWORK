@@ -60,5 +60,34 @@ namespace BasicWinform
         {
 
         }
+
+        private void rdNam_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtQueQuan_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (ThuVienColor.ShowDialog() == DialogResult.OK)
+            {
+                this.BackColor = ThuVienColor.Color;
+            }
+        }
+
+        private void User_Load(object sender, EventArgs e)
+        {
+
+
+        }
     }
 }

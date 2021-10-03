@@ -19,21 +19,21 @@ namespace BasicWinform.Entities
             ds.Add(new History
             {
                 Cap = "Cấp 1",
-                Truonghoc = "Trường Tiểu học số 1 Hương Chữ",
-                DiemTB = 8f,
+                Truonghoc = "Trường Tiểu học Hương Chữ 2",
+                DiemTB = 9f,
                 Hanhkiem = "Tốt"
             });
             ds.Add(new History
             {
                 Cap = "Cấp 2",
-                Truonghoc = "Trường Trung học cơ sở Lê Quang Tiến",
-                DiemTB = 8.2f,
+                Truonghoc = "Trường Trung học cơ sở lê Quang Tiến",
+                DiemTB = 7f,
                 Hanhkiem = "Tốt"
             });
             ds.Add(new History
             {
                 Cap = "Cấp 3",
-                Truonghoc = "Trường Trung học phổ thông Đăng Huy Trứ",
+                Truonghoc = "Trường Trung học phổ thông  Đặng Huy Trứ",
                 DiemTB = 7.8f,
                 Hanhkiem = "Tốt"
             });
