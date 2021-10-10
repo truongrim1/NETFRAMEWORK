@@ -23,6 +23,7 @@ namespace BasicWinform.Entities
         {
             get { return $"{ FirstName} {LastName}"; }
         }
+        public string IDFaculty { get; set; }
         public static List<Person> GetList()
         {
             var ls = new List<Person>();
@@ -33,7 +34,8 @@ namespace BasicWinform.Entities
                 LastName = "Vĩ",
                 DOB = new DateTime(2000, 12, 22),
                 HomeTown = "Thừa Thiên Huế",
-                Sex = EGioiTinh.Nam
+                Sex = EGioiTinh.Nam,
+                IDFaculty = "1"
             });
             ls.Add(new Person
             {
@@ -42,7 +44,8 @@ namespace BasicWinform.Entities
                 LastName = "Thị Thu",
                 DOB = new DateTime(2000, 5, 6),
                 HomeTown = "Đà Nẵng",
-                Sex = EGioiTinh.Nu
+                Sex = EGioiTinh.Nu,
+                IDFaculty = "2"
             });
             return ls;
         }
@@ -53,6 +56,13 @@ namespace BasicWinform.Entities
             //Lamda expression
             var person = dbPerson.Where(p => p.Id == id).FirstOrDefault();
             return person;
+        }
+
+        public static List<Person> GetList(string idFaculty)
+        {
+            var ls = GetList();
+            var rs = ls.Where(e => e.IDFaculty == idFaculty).ToList();
+            return rs;
         }
     }
     public enum EGioiTinh

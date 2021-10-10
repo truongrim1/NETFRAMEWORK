@@ -32,18 +32,16 @@ namespace BasicWinform
             this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.gridSinhVien = new System.Windows.Forms.DataGridView();
-            this.historyBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.personBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.firstNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lastNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dOBDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.homeTownDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sexDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fullNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.personBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.historyBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.gridSinhVien)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.historyBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.personBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.historyBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -64,22 +62,13 @@ namespace BasicWinform
             this.firstNameDataGridViewTextBoxColumn,
             this.lastNameDataGridViewTextBoxColumn,
             this.dOBDataGridViewTextBoxColumn,
-            this.homeTownDataGridViewTextBoxColumn,
-            this.sexDataGridViewTextBoxColumn,
             this.fullNameDataGridViewTextBoxColumn});
             this.gridSinhVien.DataSource = this.personBindingSource;
             this.gridSinhVien.Location = new System.Drawing.Point(12, 39);
             this.gridSinhVien.Name = "gridSinhVien";
             this.gridSinhVien.Size = new System.Drawing.Size(746, 252);
             this.gridSinhVien.TabIndex = 1;
-            // 
-            // historyBindingSource
-            // 
-            this.historyBindingSource.DataSource = typeof(BasicWinform.Entities.History);
-            // 
-            // personBindingSource
-            // 
-            this.personBindingSource.DataSource = typeof(BasicWinform.Entities.Person);
+            this.gridSinhVien.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridSinhVien_CellContentClick);
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -105,24 +94,20 @@ namespace BasicWinform
             this.dOBDataGridViewTextBoxColumn.HeaderText = "Ngày Sinh";
             this.dOBDataGridViewTextBoxColumn.Name = "dOBDataGridViewTextBoxColumn";
             // 
-            // homeTownDataGridViewTextBoxColumn
-            // 
-            this.homeTownDataGridViewTextBoxColumn.DataPropertyName = "Hometown";
-            this.homeTownDataGridViewTextBoxColumn.HeaderText = "Quê Quán";
-            this.homeTownDataGridViewTextBoxColumn.Name = "homeTownDataGridViewTextBoxColumn";
-            // 
-            // sexDataGridViewTextBoxColumn
-            // 
-            this.sexDataGridViewTextBoxColumn.DataPropertyName = "sex";
-            this.sexDataGridViewTextBoxColumn.HeaderText = "Giới Tính";
-            this.sexDataGridViewTextBoxColumn.Name = "sexDataGridViewTextBoxColumn";
-            // 
             // fullNameDataGridViewTextBoxColumn
             // 
             this.fullNameDataGridViewTextBoxColumn.DataPropertyName = "FullName";
             this.fullNameDataGridViewTextBoxColumn.HeaderText = "Họ Tên Đầy Đủ";
             this.fullNameDataGridViewTextBoxColumn.Name = "fullNameDataGridViewTextBoxColumn";
             this.fullNameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // personBindingSource
+            // 
+            this.personBindingSource.DataSource = typeof(BasicWinform.Entities.Person);
+            // 
+            // historyBindingSource
+            // 
+            this.historyBindingSource.DataSource = typeof(BasicWinform.Entities.History);
             // 
             // frmmanagerUser
             // 
@@ -135,8 +120,8 @@ namespace BasicWinform
             this.Text = "frmmanagerUser";
             this.Load += new System.EventHandler(this.frmmanagerUser_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridSinhVien)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.historyBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.personBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.historyBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

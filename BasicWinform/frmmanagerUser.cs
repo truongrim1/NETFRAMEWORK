@@ -25,5 +25,10 @@ namespace BasicWinform
         {
 
         }
+
+        private void gridSinhVien_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

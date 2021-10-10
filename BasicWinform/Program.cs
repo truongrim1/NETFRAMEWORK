@@ -16,7 +16,8 @@ namespace BasicWinform
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmmanagerUser());
+            //Application.Run(new frmmanagerUser());
+            Application.Run(new frmLopHoc());
         }
     }
 }
